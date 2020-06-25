@@ -1,0 +1,6 @@
+<p>Descrição: {{ tarefa.desc }}</p>
+<!--p> Responsável: {{ tarefa.responsavel.nome }}</p> Dá vários erros, pois não lê um objeto que está nulo-->
+
+<p> Responsável: {{ tarefa.responsavel != null ? tarefa.responsavel.nome : '' }}</p>
+
+<p>Responsável: {{ tarefa.responsavel?.nulo }}</p>

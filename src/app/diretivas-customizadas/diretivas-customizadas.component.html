@@ -1,0 +1,26 @@
+<p appFundoAmarelo>
+    Texto com fundo amarelo.
+</p>
+
+<button appFundoAmarelo> Botão com fundo amarelo</button>
+
+
+<p appHighlightMouse>Texto com highlight quando passo o mouse.</p>
+
+<p appHighlight [defaultColor]="'grey'" [highlightColor]="'red'">Texto com highlight com cores customizadas.</p>
+
+<h5>Diretiva Estruturada customizada -ngElse</h5>
+
+<div *ngIf="mostrarCursos; else elseBlock">
+    Lista de Cursos aqui.
+</div>
+
+<ng-template #elseBlock>
+    Não existem cursos para serem listados.
+</ng-template>
+
+<br>
+<button (click)="onMostrarCursos()">
+    Mostrar ou esconder cursos
+</button>
+
